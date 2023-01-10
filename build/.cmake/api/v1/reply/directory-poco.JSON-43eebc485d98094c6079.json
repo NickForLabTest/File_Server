@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"POCO_INSTALL",
+			"POCO_GENERATE_PACKAGE"
+		],
+		"files" : 
+		[
+			"poco/cmake/PocoMacros.cmake",
+			"poco/JSON/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"poco/JSON/include/Poco"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoJSON.so.94"
+			],
+			"targetId" : "JSON::@4f229b118106e1d3fcbd",
+			"targetIndex" : 10,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoJSON.so"
+			],
+			"targetId" : "JSON::@4f229b118106e1d3fcbd",
+			"targetIndex" : 10,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Poco",
+			"exportName" : "JSONTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "JSON::@4f229b118106e1d3fcbd",
+					"index" : 10
+				}
+			],
+			"paths" : 
+			[
+				"poco/JSON/CMakeFiles/Export/lib/cmake/Poco/PocoJSONTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Poco",
+			"paths" : 
+			[
+				"build/Poco/PocoJSONConfig.cmake",
+				"build/Poco/PocoJSONConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "poco/JSON",
+		"source" : "poco/JSON"
+	}
+}

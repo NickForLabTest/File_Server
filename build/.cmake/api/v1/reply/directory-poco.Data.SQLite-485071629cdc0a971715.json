@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"POCO_INSTALL",
+			"POCO_GENERATE_PACKAGE"
+		],
+		"files" : 
+		[
+			"poco/cmake/PocoMacros.cmake",
+			"poco/Data/SQLite/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"poco/Data/SQLite/include/Poco"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoDataSQLite.so.94"
+			],
+			"targetId" : "DataSQLite::@58e475a05cfe208dc0f6",
+			"targetIndex" : 6,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoDataSQLite.so"
+			],
+			"targetId" : "DataSQLite::@58e475a05cfe208dc0f6",
+			"targetIndex" : 6,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Poco",
+			"exportName" : "DataSQLiteTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "DataSQLite::@58e475a05cfe208dc0f6",
+					"index" : 6
+				}
+			],
+			"paths" : 
+			[
+				"poco/Data/SQLite/CMakeFiles/Export/lib/cmake/Poco/PocoDataSQLiteTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Poco",
+			"paths" : 
+			[
+				"build/Poco/PocoDataSQLiteConfig.cmake",
+				"build/Poco/PocoDataSQLiteConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "poco/Data/SQLite",
+		"source" : "poco/Data/SQLite"
+	}
+}

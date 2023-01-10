@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"POCO_INSTALL",
+			"POCO_GENERATE_PACKAGE"
+		],
+		"files" : 
+		[
+			"poco/cmake/PocoMacros.cmake",
+			"poco/Data/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"poco/Data/include/Poco"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoData.so.94"
+			],
+			"targetId" : "Data::@a047307e3b0bdeb65f88",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoData.so"
+			],
+			"targetId" : "Data::@a047307e3b0bdeb65f88",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Poco",
+			"exportName" : "DataTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "Data::@a047307e3b0bdeb65f88",
+					"index" : 3
+				}
+			],
+			"paths" : 
+			[
+				"poco/Data/CMakeFiles/Export/lib/cmake/Poco/PocoDataTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Poco",
+			"paths" : 
+			[
+				"build/Poco/PocoDataConfig.cmake",
+				"build/Poco/PocoDataConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "poco/Data",
+		"source" : "poco/Data"
+	}
+}

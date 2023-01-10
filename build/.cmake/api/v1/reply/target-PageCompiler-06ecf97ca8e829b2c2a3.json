@@ -1,0 +1,290 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/cpspc"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"poco/PageCompiler/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "POCO_ENABLE_CPP11"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "POCO_ENABLE_CPP14"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "POCO_HAVE_FD_EPOLL"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "POCO_OS_FAMILY_UNIX"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "XML_DTD"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_LARGEFILE64_SOURCE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_THREAD_SAFE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_XOPEN_SOURCE=500"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/test/Poco_Servr/poco/Net/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/test/Poco_Servr/poco/Foundation/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/test/Poco_Servr/poco/Util/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/test/Poco_Servr/poco/XML/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/test/Poco_Servr/poco/JSON/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Foundation::@ac941ed3d06519400734"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "XML::@407a09694fa2df365393"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "JSON::@4f229b118106e1d3fcbd"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Util::@7d20c53c93fa4df3e988"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Net::@388b5dd332bb3f20a37a"
+		}
+	],
+	"id" : "PageCompiler::@b3563291c025913ef139",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/test/Poco_Servr/build/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../lib/libPocoNet.so.94",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../lib/libPocoUtil.so.94",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/libPocoXML.so.94",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/libPocoJSON.so.94",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../lib/libPocoFoundation.so.94",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "PageCompiler",
+	"nameOnDisk" : "cpspc",
+	"paths" : 
+	{
+		"build" : "poco/PageCompiler",
+		"source" : "poco/PageCompiler"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Unknown\\Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/ApacheCodeWriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/CodeWriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/OSPCodeWriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/Page.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/PageCompiler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/PageCompiler/src/PageReader.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

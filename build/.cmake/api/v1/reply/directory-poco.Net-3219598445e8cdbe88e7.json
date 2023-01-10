@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"POCO_INSTALL",
+			"POCO_GENERATE_PACKAGE"
+		],
+		"files" : 
+		[
+			"poco/cmake/PocoMacros.cmake",
+			"poco/Net/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"poco/Net/include/Poco"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoNet.so.94"
+			],
+			"targetId" : "Net::@388b5dd332bb3f20a37a",
+			"targetIndex" : 13,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoNet.so"
+			],
+			"targetId" : "Net::@388b5dd332bb3f20a37a",
+			"targetIndex" : 13,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Poco",
+			"exportName" : "NetTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "Net::@388b5dd332bb3f20a37a",
+					"index" : 13
+				}
+			],
+			"paths" : 
+			[
+				"poco/Net/CMakeFiles/Export/lib/cmake/Poco/PocoNetTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Poco",
+			"paths" : 
+			[
+				"build/Poco/PocoNetConfig.cmake",
+				"build/Poco/PocoNetConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "poco/Net",
+		"source" : "poco/Net"
+	}
+}

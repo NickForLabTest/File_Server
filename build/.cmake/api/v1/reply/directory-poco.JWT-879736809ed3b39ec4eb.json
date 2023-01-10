@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"POCO_INSTALL",
+			"POCO_GENERATE_PACKAGE"
+		],
+		"files" : 
+		[
+			"poco/cmake/PocoMacros.cmake",
+			"poco/JWT/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"poco/JWT/include/Poco"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoJWT.so.94"
+			],
+			"targetId" : "JWT::@ab9e34375f45289f8e5c",
+			"targetIndex" : 11,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libPocoJWT.so"
+			],
+			"targetId" : "JWT::@ab9e34375f45289f8e5c",
+			"targetIndex" : 11,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Poco",
+			"exportName" : "JWTTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "JWT::@ab9e34375f45289f8e5c",
+					"index" : 11
+				}
+			],
+			"paths" : 
+			[
+				"poco/JWT/CMakeFiles/Export/lib/cmake/Poco/PocoJWTTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Devel",
+			"destination" : "lib/cmake/Poco",
+			"paths" : 
+			[
+				"build/Poco/PocoJWTConfig.cmake",
+				"build/Poco/PocoJWTConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "poco/JWT",
+		"source" : "poco/JWT"
+	}
+}

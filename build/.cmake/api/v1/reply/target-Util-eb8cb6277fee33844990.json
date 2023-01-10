@@ -1,0 +1,782 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/libPocoUtil.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"POCO_INSTALL",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"poco/Util/CMakeLists.txt",
+			"poco/cmake/PocoMacros.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 272,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "POCO_ENABLE_CPP11"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "POCO_ENABLE_CPP14"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "POCO_HAVE_FD_EPOLL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "POCO_OS_FAMILY_UNIX"
+				},
+				{
+					"define" : "Util_EXPORTS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "XML_DTD"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_LARGEFILE64_SOURCE"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_THREAD_SAFE"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_XOPEN_SOURCE=500"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/test/Poco_Servr/poco/Util/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/test/Poco_Servr/poco/Util/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/test/Poco_Servr/poco/Foundation/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/test/Poco_Servr/poco/XML/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/test/Poco_Servr/poco/JSON/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				30
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "Foundation::@ac941ed3d06519400734"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "XML::@407a09694fa2df365393"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "JSON::@4f229b118106e1d3fcbd"
+		}
+	],
+	"id" : "Util::@7d20c53c93fa4df3e988",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/test/Poco_Servr/build/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../../lib/libPocoXML.so.94",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../../lib/libPocoJSON.so.94",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lib/libPocoFoundation.so.94",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Util",
+	"nameOnDisk" : "libPocoUtil.so",
+	"paths" : 
+	{
+		"build" : "poco/Util",
+		"source" : "poco/Util"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Configuration\\Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				6,
+				9,
+				10,
+				11,
+				13,
+				19,
+				23,
+				30
+			]
+		},
+		{
+			"name" : "Application\\Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				12,
+				21,
+				22
+			]
+		},
+		{
+			"name" : "Options\\Source Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				14,
+				15,
+				16,
+				17,
+				18,
+				20,
+				26
+			]
+		},
+		{
+			"name" : "JSON\\Source Files",
+			"sourceIndexes" : 
+			[
+				8
+			]
+		},
+		{
+			"name" : "Timer\\Source Files",
+			"sourceIndexes" : 
+			[
+				24,
+				25
+			]
+		},
+		{
+			"name" : "Windows\\Source Files",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"name" : "Configuration\\Header Files",
+			"sourceIndexes" : 
+			[
+				31,
+				33,
+				34,
+				35,
+				37,
+				40,
+				41,
+				42,
+				44,
+				50,
+				54,
+				64
+			]
+		},
+		{
+			"name" : "Application\\Header Files",
+			"sourceIndexes" : 
+			[
+				32,
+				43,
+				52,
+				53
+			]
+		},
+		{
+			"name" : "Options\\Header Files",
+			"sourceIndexes" : 
+			[
+				36,
+				38,
+				45,
+				46,
+				47,
+				48,
+				49,
+				51,
+				60
+			]
+		},
+		{
+			"name" : "Util\\Header Files",
+			"sourceIndexes" : 
+			[
+				39,
+				59
+			]
+		},
+		{
+			"name" : "Timer\\Header Files",
+			"sourceIndexes" : 
+			[
+				55,
+				56,
+				57
+			]
+		},
+		{
+			"name" : "Units\\Header Files",
+			"sourceIndexes" : 
+			[
+				58
+			]
+		},
+		{
+			"name" : "Windows\\Header Files",
+			"sourceIndexes" : 
+			[
+				61,
+				62,
+				63
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/AbstractConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/Application.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/ConfigurationMapper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/ConfigurationView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/FilesystemConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/HelpFormatter.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/IniFileConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/IntValidator.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/JSONConfiguration.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/LayeredConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/LocalConfigurationView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/LoggingConfigurator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/LoggingSubsystem.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/MapConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/Option.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/OptionCallback.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/OptionException.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/OptionProcessor.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/OptionSet.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/PropertyFileConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/RegExpValidator.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/ServerApplication.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/Subsystem.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/SystemConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/Timer.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/TimerTask.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/Validator.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/src/WinRegistryConfiguration.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/src/WinRegistryKey.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/src/WinService.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Util/src/XMLConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/AbstractConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Application.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/ConfigurationMapper.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/ConfigurationView.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/FilesystemConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/HelpFormatter.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/IniFileConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/IntValidator.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/JSONConfiguration.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/LayeredConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/LocalConfigurationView.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/LoggingConfigurator.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/LoggingSubsystem.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/MapConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Option.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/OptionCallback.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/OptionException.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/OptionProcessor.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/OptionSet.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/PropertyFileConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/RegExpValidator.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/ServerApplication.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Subsystem.h",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/SystemConfiguration.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Timer.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/TimerTask.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/TimerTaskAdapter.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Units.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Util.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/Validator.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/WinRegistryConfiguration.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/WinRegistryKey.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/WinService.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Util/include/Poco/Util/XMLConfiguration.h",
+			"sourceGroupIndex" : 6
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

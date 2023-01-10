@@ -1,0 +1,688 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/libPocoCrypto.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"POCO_INSTALL",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"poco/Crypto/CMakeLists.txt",
+			"poco/cmake/PocoMacros.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 272,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Crypto_EXPORTS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "POCO_ENABLE_CPP11"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "POCO_ENABLE_CPP14"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "POCO_HAVE_FD_EPOLL"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "POCO_OS_FAMILY_UNIX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_LARGEFILE64_SOURCE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_THREAD_SAFE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_XOPEN_SOURCE=500"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/test/Poco_Servr/poco/Crypto/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/test/Poco_Servr/poco/Crypto/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/test/Poco_Servr/poco/Foundation/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "Foundation::@ac941ed3d06519400734"
+		}
+	],
+	"id" : "Crypto::@2be3a242f67d014df01e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/test/Poco_Servr/build/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../../lib/libPocoFoundation.so.94",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Crypto",
+	"nameOnDisk" : "libPocoCrypto.so",
+	"paths" : 
+	{
+		"build" : "poco/Crypto",
+		"source" : "poco/Crypto"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Cipher\\Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				6,
+				7
+			]
+		},
+		{
+			"name" : "Crypto\\Source Files",
+			"sourceIndexes" : 
+			[
+				5
+			]
+		},
+		{
+			"name" : "Digest\\Source Files",
+			"sourceIndexes" : 
+			[
+				8
+			]
+		},
+		{
+			"name" : "ECDSA\\Source Files",
+			"sourceIndexes" : 
+			[
+				9
+			]
+		},
+		{
+			"name" : "EC\\Source Files",
+			"sourceIndexes" : 
+			[
+				10,
+				11
+			]
+		},
+		{
+			"name" : "EVP\\Source Files",
+			"sourceIndexes" : 
+			[
+				12
+			]
+		},
+		{
+			"name" : "CryptoCore\\Source Files",
+			"sourceIndexes" : 
+			[
+				13,
+				15,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "Envelope\\Source Files",
+			"sourceIndexes" : 
+			[
+				14
+			]
+		},
+		{
+			"name" : "Certificate\\Source Files",
+			"sourceIndexes" : 
+			[
+				18,
+				23
+			]
+		},
+		{
+			"name" : "RSA\\Source Files",
+			"sourceIndexes" : 
+			[
+				19,
+				20,
+				21,
+				22
+			]
+		},
+		{
+			"name" : "Cipher\\Header Files",
+			"sourceIndexes" : 
+			[
+				24,
+				25,
+				26,
+				27,
+				28,
+				31,
+				32
+			]
+		},
+		{
+			"name" : "CryptoCore\\Header Files",
+			"sourceIndexes" : 
+			[
+				29,
+				38,
+				40,
+				41,
+				42
+			]
+		},
+		{
+			"name" : "Crypto\\Header Files",
+			"sourceIndexes" : 
+			[
+				30
+			]
+		},
+		{
+			"name" : "Digest\\Header Files",
+			"sourceIndexes" : 
+			[
+				33
+			]
+		},
+		{
+			"name" : "ECDSA\\Header Files",
+			"sourceIndexes" : 
+			[
+				34
+			]
+		},
+		{
+			"name" : "EC\\Header Files",
+			"sourceIndexes" : 
+			[
+				35,
+				36
+			]
+		},
+		{
+			"name" : "EVP\\Header Files",
+			"sourceIndexes" : 
+			[
+				37
+			]
+		},
+		{
+			"name" : "Envelope\\Header Files",
+			"sourceIndexes" : 
+			[
+				39
+			]
+		},
+		{
+			"name" : "Certificate\\Header Files",
+			"sourceIndexes" : 
+			[
+				43,
+				48
+			]
+		},
+		{
+			"name" : "RSA\\Header Files",
+			"sourceIndexes" : 
+			[
+				44,
+				45,
+				46,
+				47
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/Cipher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CipherFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CipherImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CipherKey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CipherKeyImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CryptoException.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CryptoStream.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/CryptoTransform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/DigestEngine.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/ECDSADigestEngine.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/ECKey.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/ECKeyImpl.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/EVPCipherImpl.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/EVPPKey.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/Envelope.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/KeyPair.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/KeyPairImpl.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/OpenSSLInitializer.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/PKCS12Container.cpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/RSACipherImpl.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/RSADigestEngine.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/RSAKey.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/RSAKeyImpl.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "poco/Crypto/src/X509Certificate.cpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/Cipher.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CipherFactory.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CipherImpl.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CipherKey.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CipherKeyImpl.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/Crypto.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CryptoException.h",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CryptoStream.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/CryptoTransform.h",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/DigestEngine.h",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/ECDSADigestEngine.h",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/ECKey.h",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/ECKeyImpl.h",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/EVPCipherImpl.h",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/EVPPKey.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/Envelope.h",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/KeyPair.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/KeyPairImpl.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/OpenSSLInitializer.h",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/PKCS12Container.h",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/RSACipherImpl.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/RSADigestEngine.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/RSAKey.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/RSAKeyImpl.h",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "poco/Crypto/include/Poco/Crypto/X509Certificate.h",
+			"sourceGroupIndex" : 18
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
