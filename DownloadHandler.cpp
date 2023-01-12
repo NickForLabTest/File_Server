@@ -27,29 +27,42 @@ class DownloadHandler: public Poco::Net::HTTPRequestHandler
         if (it != cookies.end())
         {
         Poco::URI uri (request.getURI());
-        std::cout<<request.getURI()<<std::endl;
         Poco::Net::HTMLForm form(request,request.stream());
         Poco::Util::Application& app = Poco::Util::Application::instance();
         app.logger().information("Request from " + request.clientAddress().toString());
         response.setChunkedTransferEncoding(true);
         response.setContentType("text/html");
         std::ostream& ostr = response.send();
+        std::cout<<uri.getQuery()<<std::endl;
         if(uri.getQuery().size()!=0)
         {
+            std::cout<<"Downloading file"<<std::endl;
             std::streampos fileSize;
             std::string fileName {"/home/test/db_folder/"};
             fileName+=it->second + '/' +uri.getQuery();
             std::ifstream file(fileName,std::ios::binary);
-        file.seekg(0,std::ios::end);
-        fileSize=file.tellg();
-        file.seekg(0,std::ios::beg);
-        std::vector<unsigned char> fileData(fileSize);
-        file.read((char*) &fileData[0],fileSize);
-        for(const auto & h:fileData)
-        {
-            ostr << h;
-        }
-        return;
+            std::cout<<fileName<<std::endl;
+            file.seekg(0,std::ios::end);
+            fileSize=file.tellg();
+            file.seekg(0,std::ios::beg);
+            std::vector<unsigned char> fileData(fileSize);
+            file.read((char*) &fileData[0],fileSize);
+            for(const auto & h:fileData)
+            {
+                ostr << h;
+            }
+            return;
+
+            
+        // file.seekg(0,std::ios::end);
+        // fileSize=file.tellg();
+        // file.seekg(0,std::ios::beg);
+        // std::vector<unsigned char> fileData(fileSize);
+        // file.read((char*) &fileData[0],fileSize);
+        // for(const auto & h:fileData)
+        // {
+        //     ostr << h;
+        // }
         }
         ostr << "<html>";
         ostr << "<head><title>Download</title></head>";
@@ -62,7 +75,6 @@ class DownloadHandler: public Poco::Net::HTTPRequestHandler
         std::cout<<result.size()<<std::endl;
         for(const auto& h:result)
         {
-          //ostr << "<a href=\"/download\" download=\"image.jpeg\">";
           ostr << "<a href=\"/download?";
           ostr <<h;
           ostr<<"\" download=\"";

@@ -17,14 +17,14 @@ class MyRequestHandlerFactory:public Poco::Net::HTTPRequestHandlerFactory
     MyRequestHandlerFactory(){}
     Poco::Net::HTTPRequestHandler* createRequestHandler(const Poco::Net::HTTPServerRequest& request)
     {
-       
+       Poco::URI uri (request.getURI());
 
-        if(request.getURI()=="/") return new RootHandler();
-        else if(request.getURI()=="/registration") return new RegistrationHandler();
-        else if (request.getURI()=="/autorization") return new AutorizationHandler();
-        else if (request.getURI()=="/userpage") return new UserPageHandler();
-        else if (request.getURI()=="/upload") return new DataHandler();
-        else if (request.getURI()=="/download") return new DownloadHandler();
+        if(uri.getPath()=="/") return new RootHandler();
+        else if(uri.getPath()=="/registration") return new RegistrationHandler();
+        else if (uri.getPath()=="/autorization") return new AutorizationHandler();
+        else if (uri.getPath()=="/userpage") return new UserPageHandler();
+        else if (uri.getPath()=="/upload") return new DataHandler();
+        else if (uri.getPath()=="/download") return new DownloadHandler();
         return new RootHandler;
         }
 };
